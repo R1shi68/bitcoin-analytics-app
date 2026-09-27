@@ -1,0 +1,216 @@
+{
+  "trained_columns": [
+    "Wallet_Age_Days",
+    "Wallet_Balance_BTC",
+    "BTC_Price_USD",
+    "BTC_Quantity",
+    "Transaction_Value_USD",
+    "Transaction_Fee_USD",
+    "Leverage_Ratio",
+    "Price_24h_Change_Percent",
+    "Price_7d_Change_Percent",
+    "Volatility_30d_Percent",
+    "RSI_14",
+    "Fear_Greed_Index",
+    "Portfolio_Risk_Score",
+    "Credit_Risk_Score",
+    "Investor_Type_Institutional",
+    "Investor_Type_Retail",
+    "Investor_Type_Trader",
+    "KYC_Status_Rejected",
+    "KYC_Status_Verified",
+    "Two_FA_Status_Enabled",
+    "Device_Type_Mobile",
+    "Device_Type_Tablet",
+    "Market_Sentiment_Bullish",
+    "Market_Sentiment_Neutral"
+  ],
+  "numeric_features": [
+    "Wallet_Age_Days",
+    "Wallet_Balance_BTC",
+    "BTC_Price_USD",
+    "BTC_Quantity",
+    "Transaction_Value_USD",
+    "Transaction_Fee_USD",
+    "Leverage_Ratio",
+    "Price_24h_Change_Percent",
+    "Price_7d_Change_Percent",
+    "Volatility_30d_Percent",
+    "RSI_14",
+    "Fear_Greed_Index",
+    "Portfolio_Risk_Score",
+    "Credit_Risk_Score"
+  ],
+  "categorical_features": [
+    "Investor_Type",
+    "KYC_Status",
+    "Two_FA_Status",
+    "Device_Type",
+    "Market_Sentiment"
+  ],
+  "category_options": {
+    "Investor_Type": [
+      "HNI",
+      "Institutional",
+      "Retail",
+      "Trader"
+    ],
+    "KYC_Status": [
+      "Pending",
+      "Rejected",
+      "Verified"
+    ],
+    "Two_FA_Status": [
+      "Disabled",
+      "Enabled"
+    ],
+    "Device_Type": [
+      "Desktop",
+      "Mobile",
+      "Tablet"
+    ],
+    "Market_Sentiment": [
+      "Bearish",
+      "Bullish",
+      "Neutral"
+    ]
+  },
+  "numeric_ranges": {
+    "Wallet_Age_Days": {
+      "min": 1.0,
+      "max": 2499.0,
+      "median": 1263.0
+    },
+    "Wallet_Balance_BTC": {
+      "min": 0.01301,
+      "max": 17.1951,
+      "median": 0.38121499999999997
+    },
+    "BTC_Price_USD": {
+      "min": 25056.48,
+      "max": 114986.43,
+      "median": 70514.315
+    },
+    "BTC_Quantity": {
+      "min": 0.000864,
+      "max": 1.743016,
+      "median": 0.049755
+    },
+    "Transaction_Value_USD": {
+      "min": 44.33,
+      "max": 98414.41,
+      "median": 3171.625
+    },
+    "Transaction_Fee_USD": {
+      "min": 0.06,
+      "max": 847.04,
+      "median": 20.8
+    },
+    "Leverage_Ratio": {
+      "min": 1.0,
+      "max": 20.0,
+      "median": 2.0
+    },
+    "Price_24h_Change_Percent": {
+      "min": -14.29,
+      "max": 14.2,
+      "median": -0.125
+    },
+    "Price_7d_Change_Percent": {
+      "min": -32.0,
+      "max": 32.16,
+      "median": -0.03
+    },
+    "Volatility_30d_Percent": {
+      "min": 15.07,
+      "max": 84.97,
+      "median": 50.239999999999995
+    },
+    "RSI_14": {
+      "min": 10.01,
+      "max": 89.97,
+      "median": 49.879999999999995
+    },
+    "Fear_Greed_Index": {
+      "min": 5.0,
+      "max": 95.0,
+      "median": 50.0
+    },
+    "Portfolio_Risk_Score": {
+      "min": 0.0,
+      "max": 97.0,
+      "median": 48.0
+    },
+    "Credit_Risk_Score": {
+      "min": 0.0,
+      "max": 97.0,
+      "median": 48.0
+    }
+  },
+  "cluster_features": [
+    "Wallet_Age_Days",
+    "Wallet_Balance_BTC",
+    "Portfolio_Risk_Score",
+    "Transaction_Velocity_Score"
+  ],
+  "cluster_profile": {
+    "0": {
+      "Wallet_Age_Days": 1093.68,
+      "Wallet_Balance_BTC": 4.24,
+      "Portfolio_Risk_Score": 51.57,
+      "Transaction_Velocity_Score": 46.65
+    },
+    "1": {
+      "Wallet_Age_Days": 1861.99,
+      "Wallet_Balance_BTC": 0.53,
+      "Portfolio_Risk_Score": 45.28,
+      "Transaction_Velocity_Score": 72.01
+    },
+    "2": {
+      "Wallet_Age_Days": 1469.98,
+      "Wallet_Balance_BTC": 0.54,
+      "Portfolio_Risk_Score": 48.75,
+      "Transaction_Velocity_Score": 19.56
+    },
+    "3": {
+      "Wallet_Age_Days": 517.31,
+      "Wallet_Balance_BTC": 0.53,
+      "Portfolio_Risk_Score": 48.88,
+      "Transaction_Velocity_Score": 60.75
+    }
+  },
+  "cluster_investor_crosstab": {
+    "0": {
+      "HNI": 11.6,
+      "Institutional": 14.0,
+      "Retail": 54.5,
+      "Trader": 19.8
+    },
+    "1": {
+      "HNI": 12.5,
+      "Institutional": 12.3,
+      "Retail": 59.4,
+      "Trader": 15.8
+    },
+    "2": {
+      "HNI": 9.7,
+      "Institutional": 12.9,
+      "Retail": 60.1,
+      "Trader": 17.2
+    },
+    "3": {
+      "HNI": 11.7,
+      "Institutional": 12.1,
+      "Retail": 62.9,
+      "Trader": 13.3
+    }
+  },
+  "cluster_labels": {
+    "0": "Whales",
+    "1": "Veteran active traders",
+    "2": "Dormant holders",
+    "3": "New active entrants"
+  },
+  "rf_test_accuracy": 0.555,
+  "rf_test_roc_auc": 0.48338904196214827
+}
