@@ -200,4 +200,4 @@ with tab3:
         path = os.path.join(APP_DIR, "charts", fname)
         with cols[i % 2]:
             if os.path.exists(path):
-                st.image(path, caption=caption, use_container_width=True)
+                st.image(path, caption=caption, use_column_width=True)
